@@ -1,71 +1,633 @@
+
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>athenascoin.github.io by amberadams</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>athenascoin.github.io</h1>
-        <p></p>
-
-        <p class="view"><a href="https://github.com/amberadams/athenascoin.github.io">View the Project on GitHub <small>amberadams/athenascoin.github.io</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/amberadams/athenascoin.github.io/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/amberadams/athenascoin.github.io/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/amberadams/athenascoin.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/amberadams">amberadams</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+<head>
+	<meta charset="utf-8">
+	<title>Athena's Coin</title>
+	<meta name="title" content="Athena's Coin" />
+	<meta name="description" content="Nashville, Athens of the South" />
+	<meta name="author" content="Amber Adams">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="_js/jquery.onepage-scroll.js"></script>
+  <link href='_css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
     
-  </body>
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+    h1 span {
+      font-size: 26px;
+      margin: 0 5px;
+      text-transform: capitalize;
+      background: rgba(0,0,0,0.85);
+      display: inline-block;
+      color: #6D461D;
+      border-radius: 5px 5px;
+      -webkit-border-radius: 5px 5px;
+      -moz-border-radius: 5px 5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+      padding: 3px 10px;
+    }
+    h2 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    code {
+      margin: 20px 1%;
+      float: left;
+      width: 48%;
+      height: 105px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      border-radius: 5px;
+      padding:5px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    code.html {
+      color: #7EC9E6;
+    }
+    code.js {
+      color: #FFAD00;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main h1 {
+      padding:150px 50px;
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+   
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+    
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+    
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+    
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover{
+      background: #444;
+    }
+    .btn {
+      width: 200px;
+      color: rgb(255, 255, 255);
+      border: 4px solid rgb(0, 0, 0);
+      background: rgba(3, 3, 3, 0.75);
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #444;
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: rgba(0,0,0,0.5);
+      padding: 10px;
+      width: 410px;
+      clear: both;
+    }
+    .credit a {
+      color: rgba(0,0,0,0.85);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    .ramble {
+      text-align: center;
+      color: rgba(0, 0, 0, 85);
+      padding: 10px;
+      width: 580px;
+      clear: both;
+    }
+    .ramble a {
+      color: rgba(0, 0, 0, 85);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    .rambleon {
+      text-align: center;
+      color: rgba(0, 0, 0, 85);
+      padding: 10px;
+      width: 580px;
+      clear: both;
+    }
+    .rambleon a {
+      color: rgba(0, 0, 0, 85);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    .ramblemore {
+      text-align: center;
+      color: rgba(0, 0, 0, 85);
+      padding: 10px;
+      width: 750px;
+      clear: both;
+    }
+    .ramblemore a {
+      color: rgba(0, 0, 0, 85);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+      font-size: 13px;
+      color: #000;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+    }
+    .back:hover {
+      color: black;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    
+    header {
+      position: relative;
+      z-index: 10;
+    }
+    .main section .page_container {
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+    
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+    
+    .main section.page1 {
+      background:rgb(230, 217, 200);
+    }
+    .main section.page1 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }
+    .main section .page_container .btns {
+      clear: both;
+      float: left;
+      text-align: center;
+      width: 435px;
+    }
+    .main section .page_container .btns a{
+      text-align: center;
+    }
+    .main section.page2 > img {
+      position: absolute;
+      max-width: 100%;
+      left:300px;
+      top:300px;
+      z-index: 1;
+    }
+    .main section.page3 > img {
+      position: absolute;
+      max-width: 100%;
+      right:500px;
+      top:300px;
+      z-index: 1;
+    }
+    .main section.page4 > img {
+      position: absolute;
+      max-width: 100%;
+      right:600px;
+      top:200px;
+      z-index: 1;
+    }
+    .main section.page5 > img {
+      position: absolute;
+      max-width: 100%;
+      left: 0;
+      right: 0;
+      top: 500px;
+      z-index: 1;
+    }
+    .main section.page6 > img {
+      position: absolute;
+      max-width: 100%;
+      right:500px;
+      top:300px;
+      z-index: 1;
+    }
+    .main section.page2 {
+      background: #C8DBE6 no-repeat center -150px ;
+    }
+    .main section.page2 {
+      background:rgb(200, 219, 230);
+    }
+    .main section.page2 .page_container {
+      overflow: hidden;
+      width: 800px;
+      right: -285px;
+    }
+    .main section.page2 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page2 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }
+    .main section.page3 {
+      background: #998A76 no-repeat center -150px ;
+    }
+    .main section.page3 {
+      background:rgb(153,138,118);
+    }
+    .main section.page3 .page_container {
+      overflow: hidden;
+      width: 800px;
+      right: 285px;
+    }
+    .main section.page3 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page3 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }    
+    .main section.page4 {
+      background: #678799 no-repeat center -150px ;
+    }
+    .main section.page4 {
+      background:rgb(103, 135, 153);
+    }
+    .main section.page4 .page_container {
+      overflow: hidden;
+      width: 800px;
+      right: 285px;
+    }
+    .main section.page4 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page4 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }  
+        .main section.page5 {
+      background: #FFFCF7 no-repeat center -150px ;
+    }
+    .main section.page5 {
+      background:rgb(255, 252, 247);
+    }
+    .main section.page5 .page_container {
+      overflow: hidden;
+      width: 800px;
+      left: 0;
+      right: 0;
+    }
+    .main section.page5 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page5 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }  
+    .main section.page6 {
+      background: #E6D9C8 no-repeat center -150px ;
+    }
+    .main section.page6 {
+      background:rgb(230,217,200);
+    }
+    .main section.page6 .page_container {
+      overflow: hidden;
+      width: 800px;
+      right: 285px;
+    }
+    .main section.page6 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page6 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    } 
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page4 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page5 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page6 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit .ramble .rambleon .ramblemore, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 20%;
+      left: 90%;
+    }
+
+    body.disabled-onepage-scroll .main section.page2 > img {
+      position: absolute;
+      width: 20%;
+      left: 90%;
+    }
+    body.disabled-onepage-scroll .main section.page2 > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll .main section.page2 code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    body.disabled-onepage-scroll .main section.page4 .page_container {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    body.disabled-onepage-scroll .main section.page5 .page_container {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    }
+    body.disabled-onepage-scroll .main section.page6 .page_container {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    
+      <section class="page1">
+        <div class="page_container">
+          <h1>Athena's Coin</h1>
+          <h2>Nashville, Athens of the South</h2>
+          <p class="credit">Created by <a href="http://amberadams.co">Amber Adams</a>
+  	    </div>
+  	    <img src="_images/athenaface.png" alt="athenaface">
+      </section>
+	    
+	  <section class="page2">
+	      <div class="page_container">
+			<p class="ramble">When Tennessee celebrated its centennial in 1896 Nashville culture was at a high point. Even prior to the Civil War, the city was known as the "Athens of the South" due primarily to its achievements in education and its strong democratic tradition. Nashville grew out of the Republic of Watauga, the first semi-autonomous colonial government, and the Cumberland Compact was an important early document outlining the settlers' self-governance. The first Tennessee Constitution was an extraordinarily populist document, insuring better civil rights protections for its citizens than the Bill of Rights and placing authority primarily in the hands of the representative legislature. Nashville was the first Southern city to establish a public school system and was home to over 22 colleges and universities. It hosted several thriving theaters and hotels and was already well known for its artistic community. Nashville was also a city famous for its Greek Revival architecture, such as the Belle Meade Plantation house. The State Capitol building's porticos were modelled after the Erechtheum (the other temple sacred to Athena which stood next to the Parthenon on the Acropolis) and its tower was modeled on the Choragic monument of Lysicrates in Athens.</p>    
+	      </div>
+	      <img src="_images/tncapitolcivilwar.png" alt="tncapitolcivilwar">  
+      </section>
+	    
+	    <section class="page3">
+	      <div class="page_container">
+      <p class="rambleon">In 1897 when the Tennessee Centennial and International Exposition was held in Nashville, it seemed natural to continue in the Athenian tradition of Greek Revival architecture. An entire complex of buildings similar to the Chicago World's Fair was erected, along with several small lakes (only Lake Watauga still survives), in what is now Centennial Park on West End Avenue. Among many others, there was a Woman's Building, the Negro Building (which included the most popular restaurant at the fair), the Minerals and Forestry Building, the Agriculture Building, the Industry Building, the History Building, a Clubhouse, the Gerst Haus (incorporated as its own city so they could serve beer), the Memphis/Shelby County Building (modeled after the Great Pyramid at Giza), and representing Nashville there was the Art Building in the form of a scale replica of the Parthenon. The Exposition was a resounding success; it was the only event of its kind to make a profit, but the buildings were made to be temporary and most were torn down and sold for salvage after the end of the Exposition. The Expo grounds were added to the municipal park system as Centennial Park in 1902. The people of Nashville could not bear to part with their Parthenon, however, and it remained standing until 1920 when due to its dilapidated condition and enough private support it was built as a permanent structure and art gallery. Due to tornado damage during its construction and subsequent budgetary concerns at the start of the Depression, the recreation did not have the Elgin marbles or a statue of Athena Parthenos, although both were conceived in the original plans. Athena Parthenos finally took residence on May 20, 1990 after another community effort to complete her creation nearly sixty years to the day after the modern Parthenon was dedicated.</p>    
+        </div>
+        <img src="_images/expomap.jpg" alt="expomap">
+      </section>
+            <section class="page3">
+        <div class="page_container">
+      <p class="ramble">The comparisons between ancient Athens and the Athens of the South do not end with the Exposition. The Western pediment of the Parthenon illustrates an important myth in ancient Athens, when Athena battled Poseidon over who would become patron of the city. This conflict wasn't just a duke-it-out between the gods; Athena and Poseidon offered gifts to the people of Athens in order to bribe their favor. Athena struck her spear into the Acropolis and up sprang an olive tree. Olives were an extraordinarily valuable commodity in the ancient world, used for everything from food to cosmetics to fuel. When an Olympic athlete won the games, he wasn't awarded with a gold medal, but with a jar of olive oil that could pay his taxes for a year. The Athenians appreciated Athena's gift of the olives, so Poseidon responded by striking his trident into the Acropolis. Up sprang a salt water spring, promising the Athenians they would have a large and powerful Navy. In true Athenian fashion, King Kekrops decided to put the contest down to a vote. Unfortunately, the Athenians did not choose purely on the merits of the gifts, but instead the vote was split along gender lines with the women voting for Athena and the men voting for Poseidon. Since there was one more woman in the city of Athens at the time, Athena became its patron goddess. Poseidon was not a very good loser, however, and sent a flood to destroy Athens in retribution for their preference of Athena. In order to assuage his anger, King Kekrops punished the women by revoking their right to vote and instituting marriage laws which would place them in an inferior position from that day forward. According to the Roman historian Vaklam, this is the origin of the second-class status of women in Western civilization.</p>    
+        </div>
+        <img src="_images/iris.jpg" alt="iris">
+      </section>
+      <section class="page2">
+        <div class="page_container">
+      <p class="ramble">The fact that this mythical vote decorates the Parthenon has significance in the modern history of Nashville, too. Of course we've also experienced a flood, although that's not the part of the story that was significant to the people building our Parthenon in 1920. During the Exposition, the Parthenon's art exhibit was sponsored and curated by several of the leading women of the city, who during the Belle Epoque were just coming into their own in the art world. Belle Kinney, the sculptor responsible for the modern Parthenon as well as other public art around the city, won the top award for her art exhibition during the Exposition. Maria Thompson Daviess was another accomplished artist from a prominent local family. Her cousin Kate Kirkman had an entire day of the Exposition dedicated in her honor due to their efforts in making it a success. Maria studied sculpture in Paris after the Exposition and received many accolades there, but eventually decided to return to Nashville. She opened a salon for writers, artists, and the local high society in a building downtown, where she introduced the city fathers to Belle Kinney and persuaded them to rebuild the Parthenon. Art was not Maria's only interest, however; she was also Vice President of the Nashville Suffrage Society. That same year, the 19th Amendment acknowledging women's right to vote was ratified in the Tennessee Legislature. Interestingly, it again came down to a single vote, as a Tennessee State Senator received a letter from his mother at the eleventh hour imploring him to vote for women's suffrage. Being a good Southern boy, he did what his momma told him, and the rest is Athenian history.</p>   </div>
+        <img src="_images/maria.jpeg" alt="maria">
+      </section>
+      <section class="page4">
+        <div class="page_container">
+      <p class="ramble">As patrons go, Nashville is lucky to have Athena Parthenos. She is the goddess of wisdom (although the connotation is more cunning or craftiness than the philosophical form), battle strategy (we are, after all, part of the Volunteer State), and the practical arts. In ancient Athens the practical arts were primarily weaving, but that is not to suggest that Athena was a domestic goddess. A better word for the practical arts today would be technology. So to paraphrase Enoch Root in the Cryptonomicon, Athena is patroness of cunning, craftiness, strategy, and technology. In other words, Athena is the patron goddess of hackers and makers. She champions heroes such as Odysseus, Heracles, and Perseus and ensures their success through clever applications such as the Trojan Horse and the the Aegis shield. Her adopted son Erichthonius (conceived through an unsuccessful rape attempt by Hephaestus, the god of metallurgy, which is another story altogether), not only became king of Athens but was also the inventor of the chariot and instituted the use of silver as a currency.</p>   
+        </div>
+        <img src="_images/athena.jpg" alt="athena">
+      </section>
+      <section class="page6">
+        <div class="page_container">
+      <p class="ramble">The Athenian Owl or silver tetradrachm coin was the defacto standard currency of the Mediterranean world for centuries. Coin collectors today often insist that if you only have one coin in your collection, own an Athenian Owl. It's a significant coin for several reasons. The design of a head on one side (Athena) and a tail on the other (the owl, with an olive sprig, and the initials denoting "of Athens") originated with this coin. They were used to pay the builders of the Parthenon and were handled by every ancient Greek from Pythagoras to Socrates, Plato, and Aristotle to Hippocrates and Euclid. Around 483BC new silver deposits were discovered at Laurion near Athens, which financed the Owls necessary to build the Athenian naval fleet which defeated the Persians at Salamis. That event lead not only to the rise of Greece (and particularly Athens) as a world power but to the building of the Parthenon in commemoration of the Greek victory. Even though Athens benefited from its own silver mines, it also earned seigniorage on every Owl minted whether the silver came from Greece or elsewhere, and they were traded throughout the known world as a preferred currency. The tetradachms were the most common denomination and held the most value after the rarer dekadrachms and gold staters, but were divided up into many smaller denominations including didrachms, drachms, tetrobols, hemidrachms, diobols, trihemiobols, obols, tritartemorions, hemiobols, trihemitartemorions, tetartemorions, hemiartemorions, and bronzes (but no satoshis).</p>   
+        </div>
+        <img src="_images/tetradrachm.jpg" alt="tetradrachm">
+      </section>
+      <section class="page5">
+        <div class="page_container">
+      <p class="ramblemore">It remains to be seen how many more parallels might exist between ancient Athens and the Athens of the South, but it's hard to deny that Nashville is currently reaching another cultural high point. Our patron's specialty of technology should play an important role in that development. As the Nashville Bitcoin community emerges, it will be interesting to see if the Athens of the South might take inspiration from its ancient sister city once again and become a center of technological and financial innovation. As Maria might advise us if she were alive today, Nashville history is what we make of it.</p>
+        <img src="_images/parthenon-nashville.jpg" alt="parthenon-nashville"></p>
+        </div>
+      </section>
+</body>
 </html>
