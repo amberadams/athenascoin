@@ -1,17 +1,18 @@
-
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Athena's Coin</title>
 	<meta name="title" content="Athena's Coin" />
-	<meta name="description" content="Nashville, Athens of the South" />
-	<meta name="author" content="Amber Adams">
+	<meta name="description" content="Nashville: Athens of the South" />
+	<link rel="image_src" href="/images/notify_better_image.png" />
+
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="_js/jquery.onepage-scroll.js"></script>
-  <link href='_css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <style>
     html {
@@ -192,45 +193,7 @@
       font-weight: bold;
       text-align: center;
     }
-    .ramble {
-      text-align: center;
-      color: rgba(0, 0, 0, 85);
-      padding: 10px;
-      width: 580px;
-      clear: both;
-    }
-    .ramble a {
-      color: rgba(0, 0, 0, 85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-    .rambleon {
-      text-align: center;
-      color: rgba(0, 0, 0, 85);
-      padding: 10px;
-      width: 580px;
-      clear: both;
-    }
-    .rambleon a {
-      color: rgba(0, 0, 0, 85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-    .ramblemore {
-      text-align: center;
-      color: rgba(0, 0, 0, 85);
-      padding: 10px;
-      width: 750px;
-      clear: both;
-    }
-    .ramblemore a {
-      color: rgba(0, 0, 0, 85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
+    
     .back {
       position: absolute;
       top: 0;
@@ -302,163 +265,61 @@
     .main section .page_container .btns a{
       text-align: center;
     }
+    .main section.page2 {
+      background: #555557 url(coins.png) no-repeat center -150px ;
+    }
     .main section.page2 > img {
       position: absolute;
-      max-width: 100%;
-      left:300px;
-      top:300px;
-      z-index: 1;
-    }
-    .main section.page3 > img {
-      position: absolute;
-      max-width: 100%;
-      right:500px;
-      top:300px;
-      z-index: 1;
-    }
-    .main section.page4 > img {
-      position: absolute;
-      max-width: 100%;
-      right:600px;
-      top:200px;
-      z-index: 1;
-    }
-    .main section.page5 > img {
-      position: absolute;
-      max-width: 100%;
-      left: 0;
-      right: 0;
-      top: 500px;
-      z-index: 1;
-    }
-    .main section.page6 > img {
-      position: absolute;
-      max-width: 100%;
-      right:500px;
-      top:300px;
-      z-index: 1;
-    }
-    .main section.page2 {
-      background: #C8DBE6 no-repeat center -150px ;
-    }
-    .main section.page2 {
-      background:rgb(200, 219, 230);
+      top: -300px;
+      left: 50%;
+      margin-left: -1095px;
     }
     .main section.page2 .page_container {
+      margin-top: 240px;
       overflow: hidden;
-      width: 800px;
-      right: -285px;
     }
     .main section.page2 h1 {
-      text-align: left;
+      text-align: center;
       padding: 0;
       margin-bottom: 15px;
-      font-size: 70px;
-      color: black;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: white;
     }
     .main section.page2 h2 {
-      color: rgba(0,0,0,0.85);
+      color: rgba(255,255,255,0.85);
       text-align: center;
-      width: 435px;
       line-height: 160%;
+      font-weight: 100;
     }
+    .viewing-page-2 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      }
     .main section.page3 {
-      background: #998A76 no-repeat center -150px ;
-    }
-    .main section.page3 {
-      background:rgb(153,138,118);
+      background:url(athena.png) no-repeat 156px -150px ;
     }
     .main section.page3 .page_container {
       overflow: hidden;
-      width: 800px;
-      right: 285px;
+      width: 500px;
+      right: -285px;
     }
     .main section.page3 h1 {
       text-align: left;
       padding: 0;
-      margin-bottom: 15px;
+      margin-bottom: 0;
       font-size: 70px;
+      letter-spacing: -1px;
       color: black;
     }
     .main section.page3 h2 {
       color: rgba(0,0,0,0.85);
-      text-align: center;
-      width: 435px;
-      line-height: 160%;
-    }    
-    .main section.page4 {
-      background: #678799 no-repeat center -150px ;
-    }
-    .main section.page4 {
-      background:rgb(103, 135, 153);
-    }
-    .main section.page4 .page_container {
-      overflow: hidden;
-      width: 800px;
-      right: 285px;
-    }
-    .main section.page4 h1 {
       text-align: left;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 70px;
-      color: black;
-    }
-    .main section.page4 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: center;
-      width: 435px;
       line-height: 160%;
-    }  
-        .main section.page5 {
-      background: #FFFCF7 no-repeat center -150px ;
+      font-weight: 100;
+      font-size: 21px;
     }
-    .main section.page5 {
-      background:rgb(255, 252, 247);
-    }
-    .main section.page5 .page_container {
-      overflow: hidden;
-      width: 800px;
-      left: 0;
-      right: 0;
-    }
-    .main section.page5 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 70px;
-      color: black;
-    }
-    .main section.page5 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: center;
-      width: 435px;
-      line-height: 160%;
-    }  
-    .main section.page6 {
-      background: #E6D9C8 no-repeat center -150px ;
-    }
-    .main section.page6 {
-      background:rgb(230,217,200);
-    }
-    .main section.page6 .page_container {
-      overflow: hidden;
-      width: 800px;
-      right: 285px;
-    }
-    .main section.page6 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 15px;
-      font-size: 70px;
-      color: black;
-    }
-    .main section.page6 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: center;
-      width: 435px;
-      line-height: 160%;
-    } 
+    
     body.disabled-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
       height: auto;
@@ -471,61 +332,22 @@
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
-
-    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page4 .page_container  {
-      padding: 20px;
-      margin-top: 150px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page5 .page_container  {
-      padding: 20px;
-      margin-top: 150px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page6 .page_container  {
-      padding: 20px;
-      margin-top: 150px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
+    
     body.disabled-onepage-scroll  section .page_container h1{
       text-align: center;
       font-size: 50px;
     }
-    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit .ramble .rambleon .ramblemore, body.disabled-onepage-scroll section .page_container .btns{
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
       text-align: center;
       width: 100%;
     }
     
     body.disabled-onepage-scroll .main section.page1 > img {
       position: absolute;
-      width: 20%;
-      left: 90%;
+      width: 80%;
+      left: 10%;
     }
-
-    body.disabled-onepage-scroll .main section.page2 > img {
-      position: absolute;
-      width: 20%;
-      left: 90%;
-    }
-    body.disabled-onepage-scroll .main section.page2 > img {
-      position: relative;
-      max-width: 80%;
-      bottom: 0;
-    }
-    body.disabled-onepage-scroll .main section.page2 code {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
-    }
-
+    
     body.disabled-onepage-scroll .main section > img {
       position: relative;
       max-width: 80%;
@@ -539,29 +361,10 @@
     }
     
     body.disabled-onepage-scroll .main section.page3 .page_container {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
-    }
-    body.disabled-onepage-scroll .main section.page4 .page_container {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
-    }
-    body.disabled-onepage-scroll .main section.page5 .page_container {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
-    }
-    }
-    body.disabled-onepage-scroll .main section.page6 .page_container {
-      width: 95%;
-      margin: 0 auto 25px;
-      float: none;
-      overflow: hidden;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
     }
 	</style>
 	<script>
@@ -581,52 +384,51 @@
       <section class="page1">
         <div class="page_container">
           <h1>Athena's Coin</h1>
-          <h2>Nashville, Athens of the South</h2>
-          <p class="credit">Created by <a href="http://amberadams.co">Amber Adams</a>
+          <h2>Nashville: Athens of the South</h2>
+          <p class="credit">Created by <a href="http://www.amberadams.co">Amber Adams</a>.
   	    </div>
-  	    <img src="_images/athenaface.png" alt="athenaface">
+  	    <img src="athenaface.png" alt="athenaface">
       </section>
 	    
-	  <section class="page2">
+	    <section class="page2">
 	      <div class="page_container">
-			<p class="ramble">When Tennessee celebrated its centennial in 1896 Nashville culture was at a high point. Even prior to the Civil War, the city was known as the "Athens of the South" due primarily to its achievements in education and its strong democratic tradition. Nashville grew out of the Republic of Watauga, the first semi-autonomous colonial government, and the Cumberland Compact was an important early document outlining the settlers' self-governance. The first Tennessee Constitution was an extraordinarily populist document, insuring better civil rights protections for its citizens than the Bill of Rights and placing authority primarily in the hands of the representative legislature. Nashville was the first Southern city to establish a public school system and was home to over 22 colleges and universities. It hosted several thriving theaters and hotels and was already well known for its artistic community. Nashville was also a city famous for its Greek Revival architecture, such as the Belle Meade Plantation house. The State Capitol building's porticos were modelled after the Erechtheum (the other temple sacred to Athena which stood next to the Parthenon on the Acropolis) and its tower was modeled on the Choragic monument of Lysicrates in Athens.</p>    
+          <p>When Tennessee celebrated its centennial in 1896 Nashville culture was at a high point. Even prior to the Civil War, the city was known as the "Athens of the South" due primarily to its achievements in education and its strong democratic tradition. Nashville grew out of the Republic of Watauga, the first semi-autonomous colonial government, and the Cumberland Compact was an important early document outlining the settlers' self-governance. The first Tennessee Constitution was an extraordinarily populist document, insuring better civil rights protections for its citizens than the Bill of Rights and placing authority primarily in the hands of the representative legislature. Nashville was the first Southern city to establish a public school system and was home to over 22 colleges and universities. It hosted several thriving theaters and hotels and was already well known for its artistic community. Nashville was also a city famous for its Greek Revival architecture, such as the Belle Meade Plantation house. The State Capitol building's porticos were modelled after the Erechtheum (the other temple sacred to Athena which stood next to the Parthenon on the Acropolis) and its tower was modeled on the Choragic monument of Lysicrates in Athens.</p>        
 	      </div>
-	      <img src="_images/tncapitolcivilwar.png" alt="tncapitolcivilwar">  
       </section>
 	    
 	    <section class="page3">
 	      <div class="page_container">
-      <p class="rambleon">In 1897 when the Tennessee Centennial and International Exposition was held in Nashville, it seemed natural to continue in the Athenian tradition of Greek Revival architecture. An entire complex of buildings similar to the Chicago World's Fair was erected, along with several small lakes (only Lake Watauga still survives), in what is now Centennial Park on West End Avenue. Among many others, there was a Woman's Building, the Negro Building (which included the most popular restaurant at the fair), the Minerals and Forestry Building, the Agriculture Building, the Industry Building, the History Building, a Clubhouse, the Gerst Haus (incorporated as its own city so they could serve beer), the Memphis/Shelby County Building (modeled after the Great Pyramid at Giza), and representing Nashville there was the Art Building in the form of a scale replica of the Parthenon. The Exposition was a resounding success; it was the only event of its kind to make a profit, but the buildings were made to be temporary and most were torn down and sold for salvage after the end of the Exposition. The Expo grounds were added to the municipal park system as Centennial Park in 1902. The people of Nashville could not bear to part with their Parthenon, however, and it remained standing until 1920 when due to its dilapidated condition and enough private support it was built as a permanent structure and art gallery. Due to tornado damage during its construction and subsequent budgetary concerns at the start of the Depression, the recreation did not have the Elgin marbles or a statue of Athena Parthenos, although both were conceived in the original plans. Athena Parthenos finally took residence on May 20, 1990 after another community effort to complete her creation nearly sixty years to the day after the modern Parthenon was dedicated.</p>    
-        </div>
-        <img src="_images/expomap.jpg" alt="expomap">
+          <p>In 1897 when the Tennessee Centennial and International Exposition was held in Nashville, it seemed natural to continue in the Athenian tradition of Greek Revival architecture. An entire complex of buildings similar to the Chicago World's Fair was erected, along with several small lakes (only Lake Watauga still survives), in what is now Centennial Park on West End Avenue. Among many others, there was a Woman's Building, the Negro Building (which included the most popular restaurant at the fair), the Minerals and Forestry Building, the Agriculture Building, the Industry Building, the History Building, a Clubhouse, the Gerst Haus (incorporated as its own city so they could serve beer), the Memphis/Shelby County Building (modeled after the Great Pyramid at Giza), and representing Nashville there was the Art Building in the form of a scale replica of the Parthenon. The Exposition was a resounding success; it was the only event of its kind to make a profit, but the buildings were made to be temporary and most were torn down and sold for salvage after the end of the Exposition. The Expo grounds were added to the municipal park system as Centennial Park in 1902. The people of Nashville could not bear to part with their Parthenon, however, and it remained standing until 1920 when due to its dilapidated condition and enough private support it was built as a permanent structure and art gallery. Due to tornado damage during its construction and subsequent budgetary concerns at the start of the Depression, the recreation did not have the Elgin marbles or a statue of Athena Parthenos, although both were conceived in the original plans. Athena Parthenos finally took residence on May 20, 1990 after another community effort to complete her creation nearly sixty years to the day after the modern Parthenon was dedicated.</p>
+  	    </div>
       </section>
-            <section class="page3">
+
+      <section class="page1">
         <div class="page_container">
-      <p class="ramble">The comparisons between ancient Athens and the Athens of the South do not end with the Exposition. The Western pediment of the Parthenon illustrates an important myth in ancient Athens, when Athena battled Poseidon over who would become patron of the city. This conflict wasn't just a duke-it-out between the gods; Athena and Poseidon offered gifts to the people of Athens in order to bribe their favor. Athena struck her spear into the Acropolis and up sprang an olive tree. Olives were an extraordinarily valuable commodity in the ancient world, used for everything from food to cosmetics to fuel. When an Olympic athlete won the games, he wasn't awarded with a gold medal, but with a jar of olive oil that could pay his taxes for a year. The Athenians appreciated Athena's gift of the olives, so Poseidon responded by striking his trident into the Acropolis. Up sprang a salt water spring, promising the Athenians they would have a large and powerful Navy. In true Athenian fashion, King Kekrops decided to put the contest down to a vote. Unfortunately, the Athenians did not choose purely on the merits of the gifts, but instead the vote was split along gender lines with the women voting for Athena and the men voting for Poseidon. Since there was one more woman in the city of Athens at the time, Athena became its patron goddess. Poseidon was not a very good loser, however, and sent a flood to destroy Athens in retribution for their preference of Athena. In order to assuage his anger, King Kekrops punished the women by revoking their right to vote and instituting marriage laws which would place them in an inferior position from that day forward. According to the Roman historian Vaklam, this is the origin of the second-class status of women in Western civilization.</p>    
+          <p>The comparisons between ancient Athens and the Athens of the South do not end with the Exposition. The Western pediment of the Parthenon illustrates an important myth in ancient Athens, when Athena battled Poseidon over who would become patron of the city. This conflict wasn't just a duke-it-out between the gods; Athena and Poseidon offered gifts to the people of Athens in order to bribe their favor. Athena struck her spear into the Acropolis and up sprang an olive tree. Olives were an extraordinarily valuable commodity in the ancient world, used for everything from food to cosmetics to fuel. When an Olympic athlete won the games, he wasn't awarded with a gold medal, but with a jar of olive oil that could pay his taxes for a year. The Athenians appreciated Athena's gift of the olives, so Poseidon responded by striking his trident into the Acropolis. Up sprang a salt water spring, promising the Athenians they would have a large and powerful Navy. In true Athenian fashion, King Kekrops decided to put the contest down to a vote. Unfortunately, the Athenians did not choose purely on the merits of the gifts, but instead the vote was split along gender lines with the women voting for Athena and the men voting for Poseidon. Since there was one more woman in the city of Athens at the time, Athena became its patron goddess. Poseidon was not a very good loser, however, and sent a flood to destroy Athens in retribution for their preference of Athena. In order to assuage his anger, King Kekrops punished the women by revoking their right to vote and instituting marriage laws which would place them in an inferior position from that day forward. According to the Roman historian Vaklam, this is the origin of the second-class status of women in Western civilization.</p>
         </div>
-        <img src="_images/iris.jpg" alt="iris">
       </section>
+
       <section class="page2">
         <div class="page_container">
-      <p class="ramble">The fact that this mythical vote decorates the Parthenon has significance in the modern history of Nashville, too. Of course we've also experienced a flood, although that's not the part of the story that was significant to the people building our Parthenon in 1920. During the Exposition, the Parthenon's art exhibit was sponsored and curated by several of the leading women of the city, who during the Belle Epoque were just coming into their own in the art world. Belle Kinney, the sculptor responsible for the modern Parthenon as well as other public art around the city, won the top award for her art exhibition during the Exposition. Maria Thompson Daviess was another accomplished artist from a prominent local family. Her cousin Kate Kirkman had an entire day of the Exposition dedicated in her honor due to their efforts in making it a success. Maria studied sculpture in Paris after the Exposition and received many accolades there, but eventually decided to return to Nashville. She opened a salon for writers, artists, and the local high society in a building downtown, where she introduced the city fathers to Belle Kinney and persuaded them to rebuild the Parthenon. Art was not Maria's only interest, however; she was also Vice President of the Nashville Suffrage Society. That same year, the 19th Amendment acknowledging women's right to vote was ratified in the Tennessee Legislature. Interestingly, it again came down to a single vote, as a Tennessee State Senator received a letter from his mother at the eleventh hour imploring him to vote for women's suffrage. Being a good Southern boy, he did what his momma told him, and the rest is Athenian history.</p>   </div>
-        <img src="_images/maria.jpeg" alt="maria">
-      </section>
-      <section class="page4">
-        <div class="page_container">
-      <p class="ramble">As patrons go, Nashville is lucky to have Athena Parthenos. She is the goddess of wisdom (although the connotation is more cunning or craftiness than the philosophical form), battle strategy (we are, after all, part of the Volunteer State), and the practical arts. In ancient Athens the practical arts were primarily weaving, but that is not to suggest that Athena was a domestic goddess. A better word for the practical arts today would be technology. So to paraphrase Enoch Root in the Cryptonomicon, Athena is patroness of cunning, craftiness, strategy, and technology. In other words, Athena is the patron goddess of hackers and makers. She champions heroes such as Odysseus, Heracles, and Perseus and ensures their success through clever applications such as the Trojan Horse and the the Aegis shield. Her adopted son Erichthonius (conceived through an unsuccessful rape attempt by Hephaestus, the god of metallurgy, which is another story altogether), not only became king of Athens but was also the inventor of the chariot and instituted the use of silver as a currency.</p>   
+          <p>The fact that this mythical vote decorates the Parthenon has significance in the modern history of Nashville, too. Of course we've also experienced a flood, although that's not the part of the story that was significant to the people building our Parthenon in 1920. During the Exposition, the Parthenon's art exhibit was sponsored and curated by several of the leading women of the city, who during the Belle Epoque were just coming into their own in the art world. Belle Kinney, the sculptor responsible for the modern Parthenon as well as other public art around the city, won the top award for her art exhibition during the Exposition. Maria Thompson Daviess was another accomplished artist from a prominent local family. Her cousin Kate Kirkman had an entire day of the Exposition dedicated in her honor due to their efforts in making it a success. Maria studied sculpture in Paris after the Exposition and received many accolades there, but eventually decided to return to Nashville. She opened a salon for writers, artists, and the local high society in a building downtown, where she introduced the city fathers to Belle Kinney and persuaded them to rebuild the Parthenon. Art was not Maria's only interest, however; she was also Vice President of the Nashville Suffrage Society. That same year, the 19th Amendment acknowledging women's right to vote was ratified in the Tennessee Legislature. Interestingly, it again came down to a single vote, as a Tennessee State Senator received a letter from his mother at the eleventh hour imploring him to vote for women's suffrage. Being a good Southern boy, he did what his momma told him, and the rest is Athenian history.</p>        
         </div>
-        <img src="_images/athena.jpg" alt="athena">
       </section>
-      <section class="page6">
+
+      <section class="page3">
         <div class="page_container">
-      <p class="ramble">The Athenian Owl or silver tetradrachm coin was the defacto standard currency of the Mediterranean world for centuries. Coin collectors today often insist that if you only have one coin in your collection, own an Athenian Owl. It's a significant coin for several reasons. The design of a head on one side (Athena) and a tail on the other (the owl, with an olive sprig, and the initials denoting "of Athens") originated with this coin. They were used to pay the builders of the Parthenon and were handled by every ancient Greek from Pythagoras to Socrates, Plato, and Aristotle to Hippocrates and Euclid. Around 483BC new silver deposits were discovered at Laurion near Athens, which financed the Owls necessary to build the Athenian naval fleet which defeated the Persians at Salamis. That event lead not only to the rise of Greece (and particularly Athens) as a world power but to the building of the Parthenon in commemoration of the Greek victory. Even though Athens benefited from its own silver mines, it also earned seigniorage on every Owl minted whether the silver came from Greece or elsewhere, and they were traded throughout the known world as a preferred currency. The tetradachms were the most common denomination and held the most value after the rarer dekadrachms and gold staters, but were divided up into many smaller denominations including didrachms, drachms, tetrobols, hemidrachms, diobols, trihemiobols, obols, tritartemorions, hemiobols, trihemitartemorions, tetartemorions, hemiartemorions, and bronzes (but no satoshis).</p>   
+          <p>Nashville is lucky to have Athena Parthenos as its patron. She is the goddess of wisdom (although the connotation is more cunning or craftiness than the philosophical form), battle strategy (we are, after all, part of the Volunteer State), and the practical arts. In ancient Athens the practical arts were primarily weaving, but that is not to suggest that Athena was a domestic goddess. A better word for the practical arts today would be technology. So to paraphrase Enoch Root in the Cryptonomicon, Athena is patroness of cunning, craftiness, strategy, and technology. In other words, Athena is the patron goddess of hackers and makers. She champions heroes such as Odysseus, Heracles, and Perseus and ensures their success through clever applications such as the Trojan Horse and the the Aegis shield. Her adopted son Erichthonius (conceived through an unsuccessful rape attempt by Hephaestus, the god of metallurgy, which is another story altogether), not only became king of Athens but was also the inventor of the chariot and instituted the use of silver as a currency.</p>
         </div>
-        <img src="_images/tetradrachm.jpg" alt="tetradrachm">
       </section>
-      <section class="page5">
+
+      <section class="page2">
         <div class="page_container">
-      <p class="ramblemore">It remains to be seen how many more parallels might exist between ancient Athens and the Athens of the South, but it's hard to deny that Nashville is currently reaching another cultural high point. Our patron's specialty of technology should play an important role in that development. As the Nashville Bitcoin community emerges, it will be interesting to see if the Athens of the South might take inspiration from its ancient sister city once again and become a center of technological and financial innovation. As Maria might advise us if she were alive today, Nashville history is what we make of it.</p>
-        <img src="_images/parthenon-nashville.jpg" alt="parthenon-nashville"></p>
+          <p>The Athenian Owl or silver tetradrachm coin was the defacto standard currency of the Mediterranean world for centuries. Coin collectors today often insist that if you only have one coin in your collection, own an Athenian Owl. It's a significant coin for several reasons. The design of a head on one side (Athena) and a tail on the other (the owl, with an olive sprig, and the initials denoting "of Athens") originated with this coin. They were used to pay the builders of the Parthenon and were handled by every ancient Greek from Pythagoras to Socrates, Plato, and Aristotle to Hippocrates and Euclid. Around 483BC new silver deposits were discovered at Laurion near Athens, which financed the Owls necessary to build the Athenian naval fleet which defeated the Persians at Salamis. That event lead not only to the rise of Greece (and particularly Athens) as a world power but to the building of the Parthenon in commemoration of the Greek victory. Even though Athens benefited from its own silver mines, it also earned seigniorage on every Owl minted whether the silver came from Greece or elsewhere, and they were traded throughout the known world as a preferred currency. The tetradachms were the most common denomination and held the most value after the rarer dekadrachms and gold staters, but were divided up into many smaller denominations including didrachms, drachms, tetrobols, hemidrachms, diobols, trihemiobols, obols, tritartemorions, hemiobols, trihemitartemorions, tetartemorions, hemiartemorions, and bronzes (but no satoshis).</p>
+        </div>
+      </section>
+
+      <section class="page1">
+        <div class="page_container">
+          <p>It remains to be seen how many more parallels might exist between ancient Athens and the Athens of the South, but it's hard to deny that Nashville is currently reaching another cultural high point. Our patron's specialty of technology should play an important role in that development. As the Nashville Bitcoin community emerges, it will be interesting to see if the Athens of the South might take inspiration from its ancient sister city once again and become a center of technological and financial innovation. As Maria might advise us if she were alive today, Nashville history is what we make of it.</p>    
         </div>
       </section>
 </body>
